@@ -1,7 +1,7 @@
 <h1 align="center">Hi, I'm Alvaro 👋</h1>
 
 <p align="center">
-  <b>Cloud Engineer</b> — Kubernetes, Terraform and AWS.
+  <b>DevOps & Cloud Engineer</b> — Kubernetes, Terraform and AWS.
 </p>
 
 <p align="center">
