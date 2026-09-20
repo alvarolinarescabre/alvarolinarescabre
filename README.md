@@ -18,8 +18,8 @@ I build and run the infrastructure that applications live on: clusters, pipeline
 observability and the automation that keeps all of it reproducible.
 
 - 🔭 Currently working on **EKS platforms with GitOps** (Argo CD, Karpenter, Gateway API).
-- 🌱 Digging into **eBPF-based networking and cost-aware autoscaling**.  <!-- ajusta esto -->
-- 💬 Ask me about **Kubernetes, Terraform, AWS or Go**.
+- 🌱 Digging into **DevSecOps**.
+- 💬 Ask me about **Kubernetes, Terraform, AWS**.
 - 📍 Madrid, Spain.
 
 ---
