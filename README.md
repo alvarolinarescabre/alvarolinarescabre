@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/TU-USUARIO-LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://www.linkedin.com/in/alvaro-linares-cabre"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="mailto:alvarolinarescabre@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
   <img src="https://komarev.com/ghpvc/?username=alvarolinarescabre&style=flat-square&color=blue" alt="Profile views">
 </p>
@@ -20,7 +20,7 @@ observability and the automation that keeps all of it reproducible.
 - 🔭 Currently working on **EKS platforms with GitOps** (Argo CD, Karpenter, Gateway API).
 - 🌱 Digging into **eBPF-based networking and cost-aware autoscaling**.  <!-- ajusta esto -->
 - 💬 Ask me about **Kubernetes, Terraform, AWS or Go**.
-- 📍 TU-CIUDAD, TU-PAÍS.  <!-- rellena o borra -->
+- 📍 Madrid, Spain.
 
 ---
 
@@ -44,7 +44,7 @@ observability and the automation that keeps all of it reproducible.
 
 ---
 
-### Featured project
+### Featured projects
 
 **[go-counter-href-10-sites](https://github.com/alvarolinarescabre/go-counter-href-10-sites)** —
 a Go service that fetches HTML pages and counts the words inside absolute `href` links,
@@ -58,15 +58,29 @@ GitHub push → Actions (build → ECR → bump tag) → Argo CD → EKS
                               NLB → kgateway (HPA) → counter-api (HPA) → :9090/metrics
 ```
 
-<!-- Añade aquí 2-3 repos más cuando quieras destacarlos:
-**[nombre-repo](https://github.com/alvarolinarescabre/nombre-repo)** — una línea describiéndolo.
--->
+**[vpn-bgp-multi-cloud](https://github.com/alvarolinarescabre/vpn-bgp-multi-cloud)** —
+a step-by-step guide to wiring **AWS, Azure and Google Cloud together over site-to-site VPNs
+with dynamic BGP routing**, in a hub-and-spoke topology. It covers non-overlapping RFC 1918
+ranges per cloud (AWS `172.31.0.0/16`, GCP `10.0.0.0/8`, Azure `192.168.0.0/24`), a distinct
+ASN per provider (65000 / 65001 / 65002), the APIPA link-local addressing each BGP session
+needs, and the console walkthrough for every side — Azure Virtual Network Gateways, AWS
+Customer/Virtual Private Gateways and Site-to-Site VPN connections, and GCP Cloud Router +
+HA VPN — ending with ping tests between instances in the three clouds. Full guide in the
+[wiki](https://github.com/alvarolinarescabre/vpn-bgp-multi-cloud/wiki), plus a
+[webinar](https://www.youtube.com/watch?v=Hhlqp3n9SMw) walking through it.
+
+```text
+Azure (ASN 65002) ──BGP/IPsec──┐
+                               ├── AWS (ASN 65000)  ← hub
+  GCP (ASN 65001) ──BGP/IPsec──┘
+```
+
+**[paradigma_post_peewee](https://github.com/alvarolinarescabre/paradigma_post_peewee)** —
+the companion code for my
+[Paradigma Digital blog post](https://www.paradigmadigital.com/dev/como-hacer-bases-datos-con-peewee/)
+on **PeeWee**, a lightweight Python ORM. A small SQLite-backed example that models an academy
+(teachers and classes linked by a foreign key), and walks through the full CRUD surface: table
+creation from model classes, single and bulk inserts inside an atomic transaction, updates and
+deletes with `where` clauses, and a grouped `select` + `join` across both tables.
 
 ---
-
-### GitHub
-
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=alvarolinarescabre&show_icons=true&hide_border=true&theme=default&include_all_commits=true&count_private=true" alt="GitHub stats">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=alvarolinarescabre&layout=compact&hide_border=true&theme=default&langs_count=8" alt="Top languages">
-</p>
